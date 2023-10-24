@@ -1,0 +1,89 @@
+﻿<Window x:Class="DesignTest2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:uc="clr-namespace:DesignTest2.MyData"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Height="830" Width="1250" ResizeMode="NoResize" Background="Transparent"
+        AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" >
+
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="550"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border CornerRadius="0 20 20 0"
+                Background ="White"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+                Margin=" -25 0 0 0">
+            <DataGrid x:Name="Table"
+                      Margin="175,20,20,20"
+                      BorderBrush="#FF184DC0" Background="#FF5D86DF" HeadersVisibility="Row">
+                <DataGrid.ColumnHeaderStyle>
+                    <Style/>
+                </DataGrid.ColumnHeaderStyle>
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Tefddsf" />
+                    <DataGridTextColumn Header="Tefddsf"/>
+                    <DataGridTextColumn Header="Tefddsf"/>
+                    <DataGridTextColumn Header="Tefddsf"/>
+                    <DataGridTextColumn Header="Tefddsf"/>
+                </DataGrid.Columns>
+
+            </DataGrid>
+        </Border>
+
+        <Border CornerRadius="0 20 20 0"
+                Background ="#FF7B9BE0"
+                Grid.Column="2"
+                Grid.RowSpan="2"
+                Margin=" -25 0 0 0">
+        </Border>
+        
+        <Border CornerRadius="20"
+                Background="#FF5D86DF" 
+                Grid.RowSpan="2"
+                Panel.ZIndex="2">
+            <Grid>
+                <TextBlock Text="YavaFix" Foreground="White" FontSize="30"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Center"
+                       Margin="0 10 0 0" 
+                       FontFamily="Rockwell Extra Bold"></TextBlock>
+
+                <StackPanel Margin="0 160 0 0">
+                    <uc:Menu Title="Клиенты" Icon="Account" MouseDoubleClick="Clients_MouseDoubleClick"/>
+                    <uc:Menu Title="Услуги" Icon="ListStatus" MouseDoubleClick="Service_MouseDoubleClick"/>
+                    <uc:Menu Title="Ремонт" Icon="ClipboardList" MouseDoubleClick="Work_MouseDoubleClick"/>
+                    <uc:Menu Title="Отчетность" Icon="ClipboardList">
+                        
+                    </uc:Menu>
+                </StackPanel>
+
+                <StackPanel Margin="0 160 0 50" VerticalAlignment="Bottom">
+                    <!--<Button Style="{StaticResource menuButton}" ></Button>-->
+                    <uc:Menu Title="Настройки" Icon="SettingsHelper"/>
+                    <uc:Menu Title="Выход" Icon="ExitToApp" MouseDoubleClick="Menu_MouseDoubleClick"/>
+                </StackPanel>
+
+
+            </Grid>
+        </Border>
+        
+        
+    </Grid>
+
+</Window>
