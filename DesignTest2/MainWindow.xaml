@@ -46,12 +46,12 @@
             </DataGrid>
         </Border>
 
-        <Border CornerRadius="0 20 20 0"
+        <!--<Border CornerRadius="0 20 20 0"
                 Background ="#FF7B9BE0"
                 Grid.Column="2"
                 Grid.RowSpan="2"
                 Margin=" -25 0 0 0">
-        </Border>
+        </Border>-->
         
         <Border CornerRadius="20"
                 Background="#FF5D86DF" 

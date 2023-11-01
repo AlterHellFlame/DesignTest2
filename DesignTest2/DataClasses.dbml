@@ -27,4 +27,21 @@
       <Column Name="Status" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Worker" Member="Worker">
+    <Type Name="Worker">
+      <Column Name="id" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="LenthWork" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Post" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Money" Member="Money">
+    <Type Name="Money">
+      <Column Name="Name" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Service" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Price" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>
